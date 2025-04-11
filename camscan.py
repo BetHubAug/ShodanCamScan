@@ -15,7 +15,8 @@ def get_environment_variable(var_name, prompt):
     return value
 
 def scan_for_cameras(api_key):
-    """Scans the specified IP range for open cameras.
+    """
+    Scans the specified IP range for open cameras.
 
     Args:
         api_key: The Shodan API key.
@@ -40,7 +41,8 @@ def scan_for_cameras(api_key):
         return []
 
 def get_stream_url(ip_address):
-    """Gets the stream URL from the camera.
+    """
+    Gets the stream URL from the camera.
 
     Args:
         ip_address: The IP address of the camera.
@@ -77,7 +79,8 @@ def get_stream_url(ip_address):
         sock.close()
 
 def watch_stream(stream_url):
-    """Watches the camera stream.
+    """
+    Watches the camera stream.
 
     Args:
         stream_url: The URL of the camera stream.
